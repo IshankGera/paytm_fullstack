@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Paytm: Secure & Fast UPI Payments, Recharge Mobile & Pay Bills</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elephant:wght@500&display=swap');
+        body{
+            margin: 0;
+            font-family:'Didot',sans-serif;
+        }
+        .navbar{
+            height: 85px;
+            width: 100%;
+            display: flex;
+        }
+ 
+        .left{
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 50px;
+        }
+ 
+        .middle{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-left: 80px;
+  
+        }
+ 
+        .right{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+ 
+        .sub-links{
+            font-size: 20px;
+            font-weight: bold;
+        }
+ 
+        .account{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00baf2;
+            padding: 2px 2px 2px 20px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+ 
+        .avatar{
+            margin-left: 10px;
+        }
+ 
+        .kyc{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6;
+            font-size: 18px;
+        }
+ 
+        .wallet{
+            margin-right: 5px;
+        }
+ 
+        .section-2{
+            width: 100%;
+            height: 700px;
+            display: flex;
+        }
+ 
+        .left-section{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .right-section{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 100px;
+            padding-right: 0;
+        }
+ 
+        ::-webkit-scrollbar{
+            width: 5px;
+        }
+ 
+        ::-webkit-scrollbar-thumb{
+            background-color:#4691f4;
+            border-radius: 10px ;
+        }
+ 
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
+ 
+        .head{
+            font-size: 55px;
+            font-weight: bold;
+        }
+ 
+        .para{
+            font-size: 20px;
+            font-weight: 500;
+            width: 450px;
+            line-height: 30px;
+        }
+ 
+        .btn{
+            background-color: black;
+            color: white;
+            padding: 15px 24px 15px 24px;
+            border-radius: 40px;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+ 
+        }
+ 
+        svg{
+            margin-left: 10px;
+        }
+ 
+        .right-logo{
+            height: 528px;
+            width: 528px;
+        }
+ 
+        .recharge-section{
+            width: 100%;
+            background-color:#00baf2;
+            color: white;
+            margin-bottom: 0;
+            display: flex;
+        }
+ 
+        .inner-section{
+            width: 70%;
+            margin: auto;
+        }
+ 
+        .heading{
+            font-size: 36px;
+            padding-top: 70px;
+        }
+ 
+        .rc-child{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-bottom: 50px;
+        }
+ 
+        .rc-logo{
+            height: 64px;
+            width: 64px;
+        }
+ 
+        .inner-div{
+            line-height:10px;
+            font-weight: bold;
+        }
+ 
+        .book-section{
+            width: 100%;
+            background-color:#0f4a8a;
+            color: white;
+            margin-top: 0;
+            display: flex;
+        }
+ 
+        .book-heading{
+            font-size: 36px;
+            padding-top: 70px;
+        }
+ 
+        .inside-div{
+            line-height:1px;
+            font-size: large;
+            font-weight: bold;
+        }
+ 
+        .cards{
+            width: 100%;     
+            background-color:  #ebecee;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .card-heading{
+            margin: 100px 250px 35px 250px;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 50px;
+        }
+ 
+        .box-1{
+            /* border: 1px solid red ; */
+            width: 1000px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+ 
+        .first-card{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+ 
+        .para-title{
+            margin-left: 0px;
+        }
+ 
+        .first-card-img{
+            height: 460px;
+            width: 539px;
+        }
+ 
+        .card-head{
+            font-size: 35px;
+            font-weight: bold;
+        }
+ 
+        .box-2{
+            /* border: 1px solid red ; */
+            width: 1000px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+ 
+        .second-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .sec-card-img{
+            height: 400px;
+            width: 500px;
+        }
+ 
+        .card-content{
+            display: flex;
+            margin-top: 100px;
+            margin-left: 100px;
+            flex-direction: column;
+        }
+ 
+        .card-logo{
+            height: 80px;
+            width: 80px;
+            align-content: left;
+            display: flex;
+           
+        }
+        .img-title{
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+        }
+ 
+        .title-text{
+            margin-left: 15px;
+        }
+ 
+        .card-btn{
+            background-color: black;
+            color: white;
+            padding: 15px 24px 15px 24px;
+            border-radius: 40px;
+            border: 0px;
+            display: flex;
+            width: 230px;
+            margin-top: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="https://assetscdn1.paytm.com/frontendcommonweb/df22f5d9.svg" />
+        </div>
+        <div class="middle">
+            <p class="sub-links">Paytm for Consumer</p>
+            <p class="sub-links">Paytm For Business</p>
+            <p class="sub-links">Company</p>
+            <p class="sub-links">Investor Relations</p>
+            <p class="sub-links">Career</p>
+        </div>
+        <div class="right">
+            <div class="account">
+                Sign In 
+                <img class="avatar" src="//assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg"/>
+            </div>
+        </div>
+    </div>
+ 
+    <p class="kyc"> <b class="wallet">No Wallet KYC Required</b>to pay using UPI on Paytm. Learn more.</p>
+ 
+    <div class="section-2">
+        <div class="left-section">
+            <div>
+                <img class="logo" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1626342046207.png" />
+                <h1 class="head">India's Most-loved <br> Payments App</h1>
+ 
+                <p class="para">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+
+ </div>
+        </div>
+        <div class="right-section">
+            <img class="right-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1626096258626.png" />
+        </div>
+    </div>
+ 
+    <div class="recharge-section">
+        <div class="inner-section">
+            <h1 class="heading">Recharge & Pay Bills on Paytm.</h1>
+            <div class="rc-child">
+                <div> 
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" />
+                    <div class="inner-div">
+                        <p>Recharge</p>
+                        <p>Prepaid</p>
+                        <p>Mobile <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" />
+                    <div class="inner-div">
+                        <p>Pay</p>
+                        <p>Rent</p>
+                        <p>Payment <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" />
+                    <div class="inner-div">
+                        <p>Pay</p>
+                        <p>Electricity</p>
+                        <p>Bill <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" />
+                    <div class="inner-div">
+                        <p>Recharge</p>
+                        <p>DTH</p>
+                        <p>Connection <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" />
+                    <div class="inner-div">
+                        <p>Book</p>
+                        <p>Gas</p>
+                        <p>Cylinder <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" />
+                    <div class="inner-div">
+                        <p>Pay</p>
+                        <p>Credit Card</p>
+                        <p>Bill <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/757701/1626268580682.png" />
+                    <div class="inner-div">
+                        <p>All</p>
+                        <p>Payment</p>
+                        <p>Services <span>  <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        
+    </div>
+ 
+    <div class="book-section">
+        <div class="inner-section">
+            <h1 class="book-heading">Book & Buy on Paytm.</h1>
+            <div class="rc-child">
+                <div> 
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" />
+                    <div class="inside-div">
+                        <p>Movie</p>
+                        <p>Tickets <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" />
+                    <div class="inside-div">
+                        <p>Flight</p>
+                        <p>Tickets <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" />
+                    <div class="inside-div">
+                        <p>Bus</p>
+                        <p>Tickets <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" />
+                    <div class="inside-div">
+                        <p>Train</p>
+                        <p>Tickets <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1626259953707.png" />
+                    <div class="inside-div">
+                        <p>Car &</p>
+                        <p>Bikes <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" />
+                    <div class="inside-div">
+                        <p>International</p>
+                        <p> Flights<span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+                <div>
+                    <img class="rc-logo" src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" />
+                    <div class="inside-div">
+                        <p>Invest</p>
+                        <p>in Stocks <span> <i class="fa-solid fa-greater-than"></i></span></p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        
+    </div>
+  
+<div class="box-3">
+ 
+    </div>
+ 
+    </div>
+ 
+</body>
+</html>
